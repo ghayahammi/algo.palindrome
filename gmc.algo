@@ -1,0 +1,25 @@
+FUNCTION palindrome (ch: string): BOOLEAN
+
+
+    VAR
+    
+    pal: BOOLEAN
+    n: INTEGER
+     BEGIN
+
+     n:=ch.length
+     if(ch="") or (ch=1) THEN
+
+     pal= true 
+
+
+     else if (ch[0]=ch[n-1]) THEN
+
+     palindrome (ch[1,n-2])
+
+
+    else
+    pal= false
+    END_IF
+    Return pal
+    END
